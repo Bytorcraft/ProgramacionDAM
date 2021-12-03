@@ -1,0 +1,44 @@
+package examen_1_4;
+import java.util.Scanner;
+/**
+ * Programa que te diga si has introducido bien el DNI
+ */
+/**
+ * @author Minaya
+ *
+ */
+public class examen_1_4 {
+	public static void main (String []args) {
+		Scanner teclado = new Scanner(System.in);
+		
+		String pLoc, pDom;
+		char lLoc, lDom;
+		
+		System.out.println("Introduce la parte local del correo: ");
+		pLoc= teclado.nextLine();
+		System.out.println("Introduce la parte del dominio del correo: ");
+		pDom= teclado.nextLine();
+		
+		//Haremos que realize una criba de longitud
+		if (pLoc.length()<64 && pDom.length()<255 && pLoc.length()+pDom.length()<254) {
+			
+			for(int x=0; x<pLoc.length(); x++) {
+				lLoc= pLoc.charAt(x);
+				
+				if(lLoc !='Ñ' && lLoc!='ñ' ) {
+					
+				}else {
+					System.out.println("Contiene Ñ, no es valido");
+				}
+				
+			}
+			
+			
+			
+		}
+		
+		
+		
+		
+	}
+}

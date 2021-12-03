@@ -1,0 +1,112 @@
+package examen_1_2;
+import java.util.Scanner;
+/**
+ * Programa que te diga si has introducido bien el DNI
+ */
+/**
+ * @author Minaya
+ *
+ */
+public class examen_1_2 {
+	public static void main (String []args) {
+		Scanner teclado = new Scanner(System.in);
+		
+		int numDni, modulo;
+		String leDni, leCorrecta;
+		
+		System.out.println("Introduce el NUMERO de tu DNI: ");
+		numDni= teclado.nextInt();
+		System.out.println("Introduce la LETRA del DNI: ");
+		leDni= teclado.nextLine();
+		
+		if (numDni<100000000 && numDni>0) {
+			modulo=numDni%23;
+			
+			switch (modulo) {
+			case 0:
+				leCorrecta="T";
+				break;
+			case 1:
+				leCorrecta="R";
+				break;
+			case 2:
+				leCorrecta="W";
+				break;
+			case 3:
+				leCorrecta="A";
+				break;
+			case 4:
+				leCorrecta="G";
+				break;
+			case 5:
+				leCorrecta="M";
+				break;
+			case 6:
+				leCorrecta="Y";
+				break;
+			case 7:
+				leCorrecta="F";
+				break;
+			case 8:
+				leCorrecta="P";
+				break;
+			case 9:
+				leCorrecta="D";
+				break;
+			case 10:
+				leCorrecta="X";
+				break;
+			case 11:
+				leCorrecta="B";
+				break;
+			case 12:
+				leCorrecta="N";
+				break;
+			case 13:
+				leCorrecta="J";
+				break;
+			case 14:
+				leCorrecta="Z";
+				break;
+			case 15:
+				leCorrecta="S";
+				break;
+			case 16:
+				leCorrecta="Q";
+				break;
+			case 17:
+				leCorrecta="V";
+				break;
+			case 18:
+				leCorrecta="H";
+				break;
+			case 19:
+				leCorrecta="L";
+				break;
+			case 20:
+				leCorrecta="C";
+				break;
+			case 21:
+				leCorrecta="K";
+				break;
+			case 22:
+				leCorrecta="E";
+				break;
+			default: System.out.println("Algo ha salido mal.");
+			}
+			
+			if (leDni==leCorrecta) {
+				System.out.println("Tanto la letra como el numero son correctos.");
+			}else {
+				System.out.println("La letra no es correcta");
+			}
+			
+			
+		}else {
+			System.out.println("El numero es muy grande, mayor de 100.000.000");
+		}
+		
+		
+		
+	}
+}

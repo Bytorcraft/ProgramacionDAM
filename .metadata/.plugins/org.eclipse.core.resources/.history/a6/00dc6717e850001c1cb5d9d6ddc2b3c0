@@ -1,0 +1,19 @@
+package examen_1_1;
+import java.util.Scanner;
+/**
+ * Programa que lee una frase y te dice cuantas mayusculas, minusculas y numeros hay.
+ */
+/**
+ * @author Minaya
+ *
+ */
+public class examen_1_1 {
+	public static void main (String []args) {
+		Scanner teclado = new Scanner(System.in);
+		
+		
+		
+		
+		
+	}
+}

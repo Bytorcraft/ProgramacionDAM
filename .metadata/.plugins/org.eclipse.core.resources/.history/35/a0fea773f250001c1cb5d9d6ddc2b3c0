@@ -1,0 +1,16 @@
+package examen_1_4;
+import java.util.Scanner;
+/**
+ * Programa que te diga si has introducido bien el DNI
+ */
+/**
+ * @author Minaya
+ *
+ */
+public class examen_1_4 {
+	public static void main (String []args) {
+		Scanner teclado = new Scanner(System.in);
+		
+		
+	}
+}
