@@ -41,9 +41,9 @@ public class examen_1_3 {
 		}
 		
 		if (añoHoy>añoNac){
-		//Tomare como si cada mes tuviera 31 dias 
+		//Tomare como si cada mes tuviera 31 dias (menos febrero)
 		
-		diasHastaHoy=(añoHoy*365+mesHoy*31+diaHoy+contador)-(añoNac*365+mesNac*31+diaNac+bisiesto); 
+		diasHastaHoy=(añoHoy*365+mesHoy*30+diaHoy+contador)-(añoNac*365+mesNac*31+diaNac+bisiesto); 
 		
 		System.out.println("Han pasado "+ diasHastaHoy + " dias desde que nacistes.");
 		}else {
