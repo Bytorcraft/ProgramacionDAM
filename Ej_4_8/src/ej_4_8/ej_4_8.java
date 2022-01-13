@@ -27,5 +27,6 @@ public class ej_4_8 {
 			
 			System.out.print(salida);
 		}
+		
 	}
 }

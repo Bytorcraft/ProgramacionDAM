@@ -22,15 +22,15 @@ public class ej_3_4 {
 			}
 			else System.out.println("El " + numero + " es primo.");
 /**
+		boolean primo;
 		primo= numero%2 !=0 || numero==2;
 		divisor=3;
-		boolean primo;
 		while (primo && divisor < numero && numeo !=2){
 			if (numero% divisor ==0)
 			primo = false;
 			divisor +=2;
 				}
-			System.out.println ("El numero" + numero + (primo ? "" : " no") + " es primo.")
+			System.out.println ("El numero" + numero + (primo ? "" : " no") + " es primo.");
 
 
 */

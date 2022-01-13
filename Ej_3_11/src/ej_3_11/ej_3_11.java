@@ -12,19 +12,25 @@ public class ej_3_11 {
 		Scanner teclado = new Scanner(System.in);
 		int numero;
 		int divisor= 1;
-		int maximo;
-		int contador=0;
+		int contador;
 		//hacemos que pida el numero
 		System.out.println("Introduce el numero hasta el que se quiera contar los primos: ");
-		maximo= teclado.nextInt();
+		numero= teclado.nextInt();
+
 		// creamos el proceso para decir los primos
-		for( numero=maximo;maximo<numero ;numero++ ) {
-			for (divisor=1;divisor<numero;divisor++) {
-				if (numero%divisor == 0) {
-					contador++;
+		contador=numero;
+		while(contador<numero) {
+			boolean primo;
+			primo= numero%2 !=0 || numero==2;
+			divisor=3;
+			contador--;
+			while (primo && divisor < numero && numero !=2){
+				if (numero% divisor ==0)
+					primo = false;
+				divisor+=2;
 				}
-			}	
-			if (contador==2) {System.out.println("El siguiente es: " +divisor); }
+			System.out.println ("El numero siguiente es: " + numero );	
+			}
+			}
 		}	
-	}
-}
+	

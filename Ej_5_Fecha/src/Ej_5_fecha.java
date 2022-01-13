@@ -51,5 +51,4 @@ public class Ej_5_fecha {
 		Fecha objeto = fecha();
 	 System.out.println(objeto.dia + " "+ objeto.mes+ " " + objeto.año );
 	}
-
 }
