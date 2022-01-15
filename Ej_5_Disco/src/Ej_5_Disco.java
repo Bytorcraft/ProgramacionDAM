@@ -10,6 +10,9 @@ import java.util.Scanner;
 public class Ej_5_Disco {
 	static Scanner teclado =new Scanner(System.in);
 	
-		
+		private String titulo;
+		private int numCanciones;
+		private int precio;
+		private String fechCompra;
 
 }
