@@ -11,7 +11,6 @@ public class CuentaCorriente {
 	public String getTitular() {
 		return titular;
 	}
-
 	public void setTitular(String titular) {
 		this.titular = titular;
 	}
@@ -19,7 +18,6 @@ public class CuentaCorriente {
 	public float getSaldo() {
 		return saldo;
 	}
-
 	public void setSaldo(float saldo) {
 		this.saldo = saldo;
 	}
