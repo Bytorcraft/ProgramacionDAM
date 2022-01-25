@@ -1,3 +1,8 @@
+/**
+ * Programa que te genera 20 num, te calcula la media y te dice si el numero es mayor, menor o igual.
+ * @author Minaya Herrero Latorre
+ * @date 
+ */
 import java.util.*;
 public class Ej_6_1 {
 	
@@ -24,7 +29,7 @@ public class Ej_6_1 {
 		System.out.println("");
 		System.out.println("La media es: "+ media);
 		
-		for (int x=0; x<random.length; x++) {// te dice si es mayor, meno o igual a la media
+		for (int x=0; x<random.length; x++) {// te dice si es mayor, menor o igual a la media
 			if(random[x]>=media) {
 				System.out.println(random[x]+" es mayor que la media");
 			}else if(random[x]==(int) media) {

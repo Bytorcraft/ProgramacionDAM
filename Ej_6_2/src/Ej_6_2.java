@@ -1,3 +1,8 @@
+/**
+ * Programa que te suma 2 vectores de 10 num y te los almacena y muestra en un tercero.
+ * @author Minaya Herrero Latorre
+ * @date 
+ */
 import java.util.Random;
 import java.util.Scanner;
 public class Ej_6_2 {
