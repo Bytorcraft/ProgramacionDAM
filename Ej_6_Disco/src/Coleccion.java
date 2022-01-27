@@ -1,47 +1,46 @@
-/**
- * Programa que almacena datos de discos.
- * @author alu
- * @date
- */
 import java.util.Scanner;
-import java.util.Random;
-public class Coleccion {
-	 Scanner teclado= new Scanner(System.in);
+/**Crear una clase Disco para guardar información sobre los discos de música que
+ * tenemos.
+ * La información asociada a cada uno de los discos es:
+ * Titulo, no de canciones, precio y fecha de compra.
+ *  
+ * @author Minaya Herrero
+ * @date 27/01/2022
+ */
+public class Coleccion {	public static void main(String[]Args) {
+		Scanner teclado=new Scanner(System.in);
+	
+		int opcion, indice=0;
+		boolean sigue=true;
+		
+		Disco nuevoDisco= new Disco();
+		Disco[] vector= new Disco[100];
+		for(int x=0;x<vector.length;x++) {
+			vector[x]=new Disco();
+		}
+		
+		do {
+			System.out.println("Pulsa 1 si quiere meter un nuevo disco, sino, pulse cualquier otro numero.");
+			opcion=teclado.nextInt();
+			
+			switch(opcion) {
+			case 1 :
+				nuevoDisco.entradaDatos();
+				
+				vector[indice].getTitulo();
+				vector[indice].getNumCanciones();
+				vector[indice].getPrecio();
+				vector[indice].getFechCompra();
+				indice++;
+				System.out.println(vector[indice]);
+				break;
+			default:sigue=false;
+			}
+			
+		
+		} while(sigue==true);
 
-	private String titulo;
-	private int numCanciones;
-	private int precio;
-	private String fechCompra;
-	
-	public String getTitulo() {
-		return titulo;}
-	public void setTitulo(String titulo) {
-		this.titulo = titulo;}
-	
-	public int getNumCanciones() {
-		return numCanciones;}
-	public void setNumCanciones(int numCanciones) {
-		this.numCanciones = numCanciones;}
-	
-	public int getPrecio() {
-		return precio;}
-	public void setPrecio(int precio) {
-		this.precio = precio;}
-	
-	public String getFechCompra() {
-		return fechCompra;}
-	public void setFechCompra(String fechCompra) {
-		this.fechCompra = fechCompra;}
-	
-	public void entradaDatos() {
-		System.out.println("Introduce el Titulo del album: ");
-		titulo=teclado.nextLine();
-		System.out.println("Di cuantas canciones tiene: ");
-		numCanciones=teclado.nextInt();
-		System.out.println("Introduce el precio: ");
-		precio=teclado.nextInt();
-		System.out.println("Introduce la fecha de compra: ");
-		fechCompra=teclado.nextLine();
 	}
-	
 }
+
+
