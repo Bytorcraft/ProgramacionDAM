@@ -10,8 +10,9 @@ import java.util.Scanner;
 public class Coleccion {	public static void main(String[]Args) {
 		Scanner teclado=new Scanner(System.in);
 	
-		int opcion, indice=0;
+		int opcion, numCanciones,indice=0, precio;
 		boolean sigue=true;
+		String titulo, fechaCompra;
 		
 		Disco nuevoDisco= new Disco();
 		Disco[] vector= new Disco[100];
@@ -27,12 +28,13 @@ public class Coleccion {	public static void main(String[]Args) {
 			case 1 :
 				nuevoDisco.entradaDatos();
 				
-				vector[indice].getTitulo();
-				vector[indice].getNumCanciones();
-				vector[indice].getPrecio();
-				vector[indice].getFechCompra();
+				titulo=nuevoDisco.getTitulo();
+				numCanciones=nuevoDisco.getNumCanciones();
+				precio=nuevoDisco.getPrecio();
+				fechaCompra=nuevoDisco.getFechCompra();
+				System.out.println(titulo+" tiene " +numCanciones+" canciones, cuesta "+precio+"€ y fue comprado el "+fechaCompra);
 				indice++;
-				System.out.println(vector[indice]);
+				System.out.println("Disco numero: "+indice);
 				break;
 			default:sigue=false;
 			}

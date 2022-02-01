@@ -28,6 +28,7 @@ public class Disco {
 		this.precio = precio;}
 	
 	public String getFechCompra() {
+		fechCompra=teclado.nextLine();
 		return fechCompra;}
 	public void setFechCompra(String fechCompra) {
 		this.fechCompra = fechCompra;}
@@ -37,10 +38,13 @@ public class Disco {
 		
 		System.out.println("Introduce el Titulo del album: ");
 		titulo=teclado.nextLine();
+		
 		System.out.println("Di cuantas canciones tiene: ");
 		numCanciones=teclado.nextInt();
+		
 		System.out.println("Introduce el precio: ");
 		precio=teclado.nextInt();
+		
 		System.out.println("Introduce la fecha de compra: ");
 		fechCompra=teclado.nextLine();
 		
