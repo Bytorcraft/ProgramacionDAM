@@ -35,11 +35,11 @@ public class CuentaCorriente {
 		titular = teclado.nextLine();
 		System.out.println("Introduce el saldo: ");
 		saldo = teclado.nextFloat();
-		System.out.println("Introduce tu codigo de seguridad, de 8 digitos: ");
+		System.out.println("Introduce tu codigo de seguridad, de 8 caracteres: ");
 		codigo = teclado.next();
 		
 		while (codigo.length() > 8 || codigo.length() < 8) {
-			System.out.println("Cagaste mi loco, solo 8 caracteres EXACTOS :C, vuelve a introducirlo.");
+			System.out.println("Cagaste mi loco, solo 8 caracteres EXACTOS :C, vuelve a introducirlo: ");
 			codigo=teclado.next();
 			}
 		System.out.println("El nombre del Titular es: "+ titular +" tu saldo es de "+ saldo);

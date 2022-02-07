@@ -17,7 +17,8 @@ public class Ejecutable {
 do {
 			System.out.println("");
 			System.out.println("Indique 1 para imprimir, 2 para vaciar, 3 para añadir un numero, 4 para eliminar un numero,");
-			System.out.println("5 para copiar el primer vector en otro, 6 te dice si el numero esta, 7 para salir");
+			System.out.println("5 para copiar el primer vector en otro, 6 te dice si el numero esta, 7 para decir una posicion y te devuelve el numero,");
+			System.out.println("8 para ver si los 2 vectores son iguales y 9 para finalizar");
 				eleccion=teclado.nextInt();
 				
 			switch(eleccion) {
@@ -40,6 +41,12 @@ do {
 				nuevoConjunto.esMiembro();
 				break;
 			case 7:
+				nuevoConjunto.posicion();
+				break;
+			case 8:
+				nuevoConjunto.esIgual();
+				break;
+			case 9:
 				salir=false;
 				break;
 				

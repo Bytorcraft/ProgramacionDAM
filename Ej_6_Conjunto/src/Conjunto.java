@@ -95,7 +95,21 @@ public class Conjunto {
 			System.out.println("El numero esta");
 		}
 	}
-	
-}
+	public void posicion() {
+		int introducido;
+
+		System.out.println("Pon la posicion en la que quieras buscar en este conjunto: ");
+		introducido=teclado.nextInt();
+		
+		System.out.println("El numero en esa posicion es: "+ vector[introducido]);	
+	}
+	public void esIgual() {
+		if(vector.equals(vector2)== true) {
+			System.out.println("Los vectores son iguales. ");
+		} else if (vector.equals(vector2)!= true) {
+			System.out.println("Los vectores no son iguales. ");
+		}
+	}
+	}
 
 
