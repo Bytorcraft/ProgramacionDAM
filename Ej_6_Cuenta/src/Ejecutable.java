@@ -10,6 +10,8 @@ public class Ejecutable {
 		CuentaCorriente nuevaCuenta=new CuentaCorriente();
 		
 		nuevaCuenta.crear();
+		nuevaCuenta.crear2();
+		nuevaCuenta.crear3();
 		nuevaCuenta.ordenar();
 		
 		
