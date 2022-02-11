@@ -46,7 +46,7 @@
 		<item key="fromStandard" value="true"/>
 		<item key="docletname" value=""/>
 		<item key="docletpath" value=""/>
-		<item key="access" value="public"/>
+		<item key="access" value="private"/>
 		<item key="use" value="true"/>
 		<item key="author" value="true"/>
 		<item key="version" value="true"/>
@@ -58,13 +58,334 @@
 		<item key="nonavbar" value="false"/>
 		<item key="openinbrowser" value="false"/>
 		<item key="source" value="16"/>
-		<item key="antpath" value="C:\Users\alu\Documents\Programacion\eclipse\Ej_6_Conjunto\javadoc.xml"/>
-		<item key="destdir" value="C:\Users\alu\Documents\Programacion\eclipse\Ej_6_Conjunto\doc"/>
+		<item key="antpath" value="C:\Users\alu\Documents\Programacion\eclipse\Ej_6_10\javadoc.xml"/>
+		<item key="destdir" value="C:\Users\alu\Documents\Programacion\eclipse\Ej_6_10\doc"/>
+		<item key="doctitle" value="DocumentacionTresEnRaya"/>
 		<section name="projects">
+			<section name="Ej_3_1">
+				<item key="href" value=""/>
+				<item key="destdir" value="C:\Users\alu\Documents\Programacion\eclipse\Ej_3_1\doc"/>
+				<item key="antpath" value="C:\Users\alu\Documents\Programacion\eclipse\Ej_3_1\javadoc.xml"/>
+			</section>
+			<section name="Ej_3_9">
+				<item key="href" value=""/>
+				<item key="destdir" value="C:\Users\alu\Documents\Programacion\eclipse\Ej_3_9\doc"/>
+				<item key="antpath" value="C:\Users\alu\Documents\Programacion\eclipse\Ej_3_9\javadoc.xml"/>
+			</section>
+			<section name="Ej_4_8">
+				<item key="href" value=""/>
+				<item key="destdir" value="C:\Users\alu\Documents\Programacion\eclipse\Ej_4_8\doc"/>
+				<item key="antpath" value="C:\Users\alu\Documents\Programacion\eclipse\Ej_4_8\javadoc.xml"/>
+			</section>
+			<section name="Ej_5_Indicador">
+				<item key="href" value=""/>
+				<item key="destdir" value="C:\Users\alu\Documents\Programacion\eclipse\Ej_5_Indicador\doc"/>
+				<item key="antpath" value="C:\Users\alu\Documents\Programacion\eclipse\Ej_5_Indicador\javadoc.xml"/>
+			</section>
+			<section name="Ej_5_7">
+				<item key="href" value=""/>
+				<item key="destdir" value="C:\Users\alu\Documents\Programacion\eclipse\Ej_5_7\doc"/>
+				<item key="antpath" value="C:\Users\alu\Documents\Programacion\eclipse\Ej_5_7\javadoc.xml"/>
+			</section>
+			<section name="Examen_1_4">
+				<item key="href" value=""/>
+				<item key="destdir" value="C:\Users\alu\Documents\Programacion\eclipse\Examen_1_4\doc"/>
+				<item key="antpath" value="C:\Users\alu\Documents\Programacion\eclipse\Examen_1_4\javadoc.xml"/>
+			</section>
+			<section name="Ej_4_12">
+				<item key="href" value=""/>
+				<item key="destdir" value="C:\Users\alu\Documents\Programacion\eclipse\Ej_4_12\doc"/>
+				<item key="antpath" value="C:\Users\alu\Documents\Programacion\eclipse\Ej_4_12\javadoc.xml"/>
+			</section>
+			<section name="Repaso_3">
+				<item key="href" value=""/>
+				<item key="destdir" value="C:\Users\alu\Documents\Programacion\eclipse\Repaso_3\doc"/>
+				<item key="antpath" value="C:\Users\alu\Documents\Programacion\eclipse\Repaso_3\javadoc.xml"/>
+			</section>
 			<section name="Ej_6_Conjunto">
 				<item key="href" value=""/>
 				<item key="destdir" value="C:\Users\alu\Documents\Programacion\eclipse\Ej_6_Conjunto\doc"/>
 				<item key="antpath" value="C:\Users\alu\Documents\Programacion\eclipse\Ej_6_Conjunto\javadoc.xml"/>
+			</section>
+			<section name="Ej_3_10">
+				<item key="href" value=""/>
+				<item key="destdir" value="C:\Users\alu\Documents\Programacion\eclipse\Ej_3_10\doc"/>
+				<item key="antpath" value="C:\Users\alu\Documents\Programacion\eclipse\Ej_3_10\javadoc.xml"/>
+			</section>
+			<section name="Ej_3_2">
+				<item key="href" value=""/>
+				<item key="destdir" value="C:\Users\alu\Documents\Programacion\eclipse\Ej_3_2\doc"/>
+				<item key="antpath" value="C:\Users\alu\Documents\Programacion\eclipse\Ej_3_2\javadoc.xml"/>
+			</section>
+			<section name="Ej_4_1">
+				<item key="href" value=""/>
+				<item key="destdir" value="C:\Users\alu\Documents\Programacion\eclipse\Ej_4_1\doc"/>
+				<item key="antpath" value="C:\Users\alu\Documents\Programacion\eclipse\Ej_4_1\javadoc.xml"/>
+			</section>
+			<section name="Ej_4_9">
+				<item key="href" value=""/>
+				<item key="destdir" value="C:\Users\alu\Documents\Programacion\eclipse\Ej_4_9\doc"/>
+				<item key="antpath" value="C:\Users\alu\Documents\Programacion\eclipse\Ej_4_9\javadoc.xml"/>
+			</section>
+			<section name="Ej_5_8">
+				<item key="href" value=""/>
+				<item key="destdir" value="C:\Users\alu\Documents\Programacion\eclipse\Ej_5_8\doc"/>
+				<item key="antpath" value="C:\Users\alu\Documents\Programacion\eclipse\Ej_5_8\javadoc.xml"/>
+			</section>
+			<section name="Ej_4_11">
+				<item key="href" value=""/>
+				<item key="destdir" value="C:\Users\alu\Documents\Programacion\eclipse\Ej_4_11\doc"/>
+				<item key="antpath" value="C:\Users\alu\Documents\Programacion\eclipse\Ej_4_11\javadoc.xml"/>
+			</section>
+			<section name="Ej_5_CuentaCorriente">
+				<item key="href" value=""/>
+				<item key="destdir" value="C:\Users\alu\Documents\Programacion\eclipse\Ej_5_CuentaCorriente\doc"/>
+				<item key="antpath" value="C:\Users\alu\Documents\Programacion\eclipse\Ej_5_CuentaCorriente\javadoc.xml"/>
+			</section>
+			<section name="Repaso_2">
+				<item key="href" value=""/>
+				<item key="destdir" value="C:\Users\alu\Documents\Programacion\eclipse\Repaso_2\doc"/>
+				<item key="antpath" value="C:\Users\alu\Documents\Programacion\eclipse\Repaso_2\javadoc.xml"/>
+			</section>
+			<section name="Ej_6_Disco">
+				<item key="href" value=""/>
+				<item key="destdir" value="C:\Users\alu\Documents\Programacion\eclipse\Ej_6_Disco\doc"/>
+				<item key="antpath" value="C:\Users\alu\Documents\Programacion\eclipse\Ej_6_Disco\javadoc.xml"/>
+			</section>
+			<section name="Ej_5_Trabajador">
+				<item key="href" value=""/>
+				<item key="destdir" value="C:\Users\alu\Documents\Programacion\eclipse\Ej_5_Trabajador\doc"/>
+				<item key="antpath" value="C:\Users\alu\Documents\Programacion\eclipse\Ej_5_Trabajador\javadoc.xml"/>
+			</section>
+			<section name="Ej_3_11">
+				<item key="href" value=""/>
+				<item key="destdir" value="C:\Users\alu\Documents\Programacion\eclipse\Ej_3_11\doc"/>
+				<item key="antpath" value="C:\Users\alu\Documents\Programacion\eclipse\Ej_3_11\javadoc.xml"/>
+			</section>
+			<section name="Ej_3_3">
+				<item key="href" value=""/>
+				<item key="destdir" value="C:\Users\alu\Documents\Programacion\eclipse\Ej_3_3\doc"/>
+				<item key="antpath" value="C:\Users\alu\Documents\Programacion\eclipse\Ej_3_3\javadoc.xml"/>
+			</section>
+			<section name="Ej_4_2">
+				<item key="href" value=""/>
+				<item key="destdir" value="C:\Users\alu\Documents\Programacion\eclipse\Ej_4_2\doc"/>
+				<item key="antpath" value="C:\Users\alu\Documents\Programacion\eclipse\Ej_4_2\javadoc.xml"/>
+			</section>
+			<section name="Ej_6_Empleado">
+				<item key="href" value=""/>
+				<item key="destdir" value="C:\Users\alu\Documents\Programacion\eclipse\Ej_6_Empleado\doc"/>
+				<item key="antpath" value="C:\Users\alu\Documents\Programacion\eclipse\Ej_6_Empleado\javadoc.xml"/>
+			</section>
+			<section name="Ej_5_1">
+				<item key="href" value=""/>
+				<item key="destdir" value="C:\Users\alu\Documents\Programacion\eclipse\Ej_5_1\doc"/>
+				<item key="antpath" value="C:\Users\alu\Documents\Programacion\eclipse\Ej_5_1\javadoc.xml"/>
+			</section>
+			<section name="Ej_5_9">
+				<item key="href" value=""/>
+				<item key="destdir" value="C:\Users\alu\Documents\Programacion\eclipse\Ej_5_9\doc"/>
+				<item key="antpath" value="C:\Users\alu\Documents\Programacion\eclipse\Ej_5_9\javadoc.xml"/>
+			</section>
+			<section name="Repaso_5">
+				<item key="href" value=""/>
+				<item key="destdir" value="C:\Users\alu\Documents\Programacion\eclipse\Repaso_5\doc"/>
+				<item key="antpath" value="C:\Users\alu\Documents\Programacion\eclipse\Repaso_5\javadoc.xml"/>
+			</section>
+			<section name="Ej_5_11">
+				<item key="href" value=""/>
+				<item key="destdir" value="C:\Users\alu\Documents\Programacion\eclipse\Ej_5_11\doc"/>
+				<item key="antpath" value="C:\Users\alu\Documents\Programacion\eclipse\Ej_5_11\javadoc.xml"/>
+			</section>
+			<section name="Ej_3_4">
+				<item key="href" value=""/>
+				<item key="destdir" value="C:\Users\alu\Documents\Programacion\eclipse\Ej_3_4\doc"/>
+				<item key="antpath" value="C:\Users\alu\Documents\Programacion\eclipse\Ej_3_4\javadoc.xml"/>
+			</section>
+			<section name="Ej_4_3">
+				<item key="href" value=""/>
+				<item key="destdir" value="C:\Users\alu\Documents\Programacion\eclipse\Ej_4_3\doc"/>
+				<item key="antpath" value="C:\Users\alu\Documents\Programacion\eclipse\Ej_4_3\javadoc.xml"/>
+			</section>
+			<section name="Ej_5_2">
+				<item key="href" value=""/>
+				<item key="destdir" value="C:\Users\alu\Documents\Programacion\eclipse\Ej_5_2\doc"/>
+				<item key="antpath" value="C:\Users\alu\Documents\Programacion\eclipse\Ej_5_2\javadoc.xml"/>
+			</section>
+			<section name="Ej_6_1">
+				<item key="href" value=""/>
+				<item key="destdir" value="C:\Users\alu\Documents\Programacion\eclipse\Ej_6_1\doc"/>
+				<item key="antpath" value="C:\Users\alu\Documents\Programacion\eclipse\Ej_6_1\javadoc.xml"/>
+			</section>
+			<section name="Ej_6_10">
+				<item key="href" value=""/>
+				<item key="destdir" value="C:\Users\alu\Documents\Programacion\eclipse\Ej_6_10\doc"/>
+				<item key="antpath" value="C:\Users\alu\Documents\Programacion\eclipse\Ej_6_10\javadoc.xml"/>
+			</section>
+			<section name="Ej_5_Hora">
+				<item key="href" value=""/>
+				<item key="destdir" value="C:\Users\alu\Documents\Programacion\eclipse\Ej_5_Hora\doc"/>
+				<item key="antpath" value="C:\Users\alu\Documents\Programacion\eclipse\Ej_5_Hora\javadoc.xml"/>
+			</section>
+			<section name="Repaso_4">
+				<item key="href" value=""/>
+				<item key="destdir" value="C:\Users\alu\Documents\Programacion\eclipse\Repaso_4\doc"/>
+				<item key="antpath" value="C:\Users\alu\Documents\Programacion\eclipse\Repaso_4\javadoc.xml"/>
+			</section>
+			<section name="Ej_3_5">
+				<item key="href" value=""/>
+				<item key="destdir" value="C:\Users\alu\Documents\Programacion\eclipse\Ej_3_5\doc"/>
+				<item key="antpath" value="C:\Users\alu\Documents\Programacion\eclipse\Ej_3_5\javadoc.xml"/>
+			</section>
+			<section name="Ej_4_4">
+				<item key="href" value=""/>
+				<item key="destdir" value="C:\Users\alu\Documents\Programacion\eclipse\Ej_4_4\doc"/>
+				<item key="antpath" value="C:\Users\alu\Documents\Programacion\eclipse\Ej_4_4\javadoc.xml"/>
+			</section>
+			<section name="Ej_5_3">
+				<item key="href" value=""/>
+				<item key="destdir" value="C:\Users\alu\Documents\Programacion\eclipse\Ej_5_3\doc"/>
+				<item key="antpath" value="C:\Users\alu\Documents\Programacion\eclipse\Ej_5_3\javadoc.xml"/>
+			</section>
+			<section name="Ej_6_2">
+				<item key="href" value=""/>
+				<item key="destdir" value="C:\Users\alu\Documents\Programacion\eclipse\Ej_6_2\doc"/>
+				<item key="antpath" value="C:\Users\alu\Documents\Programacion\eclipse\Ej_6_2\javadoc.xml"/>
+			</section>
+			<section name="Ej_6_11">
+				<item key="href" value=""/>
+				<item key="destdir" value="C:\Users\alu\Documents\Programacion\eclipse\Ej_6_11\doc"/>
+				<item key="antpath" value="C:\Users\alu\Documents\Programacion\eclipse\Ej_6_11\javadoc.xml"/>
+			</section>
+			<section name="Ej_5_Disco">
+				<item key="href" value=""/>
+				<item key="destdir" value="C:\Users\alu\Documents\Programacion\eclipse\Ej_5_Disco\doc"/>
+				<item key="antpath" value="C:\Users\alu\Documents\Programacion\eclipse\Ej_5_Disco\javadoc.xml"/>
+			</section>
+			<section name="Repaso_7">
+				<item key="href" value=""/>
+				<item key="destdir" value="C:\Users\alu\Documents\Programacion\eclipse\Repaso_7\doc"/>
+				<item key="antpath" value="C:\Users\alu\Documents\Programacion\eclipse\Repaso_7\javadoc.xml"/>
+			</section>
+			<section name="Tipo_examen_1">
+				<item key="href" value=""/>
+				<item key="destdir" value="C:\Users\alu\Documents\Programacion\eclipse\Tipo_examen_1\doc"/>
+				<item key="antpath" value="C:\Users\alu\Documents\Programacion\eclipse\Tipo_examen_1\javadoc.xml"/>
+			</section>
+			<section name="fibonacci">
+				<item key="href" value=""/>
+				<item key="destdir" value="C:\Users\alu\Documents\Programacion\eclipse\fibonacci\doc"/>
+				<item key="antpath" value="C:\Users\alu\Documents\Programacion\eclipse\fibonacci\javadoc.xml"/>
+			</section>
+			<section name="Ej_3_6">
+				<item key="href" value=""/>
+				<item key="destdir" value="C:\Users\alu\Documents\Programacion\eclipse\Ej_3_6\doc"/>
+				<item key="antpath" value="C:\Users\alu\Documents\Programacion\eclipse\Ej_3_6\javadoc.xml"/>
+			</section>
+			<section name="Ej_4_5">
+				<item key="href" value=""/>
+				<item key="destdir" value="C:\Users\alu\Documents\Programacion\eclipse\Ej_4_5\doc"/>
+				<item key="antpath" value="C:\Users\alu\Documents\Programacion\eclipse\Ej_4_5\javadoc.xml"/>
+			</section>
+			<section name="Ej_5_4">
+				<item key="href" value=""/>
+				<item key="destdir" value="C:\Users\alu\Documents\Programacion\eclipse\Ej_5_4\doc"/>
+				<item key="antpath" value="C:\Users\alu\Documents\Programacion\eclipse\Ej_5_4\javadoc.xml"/>
+			</section>
+			<section name="Ej_6_3">
+				<item key="href" value=""/>
+				<item key="destdir" value="C:\Users\alu\Documents\Programacion\eclipse\Ej_6_3\doc"/>
+				<item key="antpath" value="C:\Users\alu\Documents\Programacion\eclipse\Ej_6_3\javadoc.xml"/>
+			</section>
+			<section name="Examen_1_1">
+				<item key="href" value=""/>
+				<item key="destdir" value="C:\Users\alu\Documents\Programacion\eclipse\Examen_1_1\doc"/>
+				<item key="antpath" value="C:\Users\alu\Documents\Programacion\eclipse\Examen_1_1\javadoc.xml"/>
+			</section>
+			<section name="Repaso_6">
+				<item key="href" value=""/>
+				<item key="destdir" value="C:\Users\alu\Documents\Programacion\eclipse\Repaso_6\doc"/>
+				<item key="antpath" value="C:\Users\alu\Documents\Programacion\eclipse\Repaso_6\javadoc.xml"/>
+			</section>
+			<section name="BlackJack">
+				<item key="href" value=""/>
+				<item key="destdir" value="C:\Users\alu\Documents\Programacion\eclipse\BlackJack\doc"/>
+				<item key="antpath" value="C:\Users\alu\Documents\Programacion\eclipse\BlackJack\javadoc.xml"/>
+			</section>
+			<section name="Ej_3_7">
+				<item key="href" value=""/>
+				<item key="destdir" value="C:\Users\alu\Documents\Programacion\eclipse\Ej_3_7\doc"/>
+				<item key="antpath" value="C:\Users\alu\Documents\Programacion\eclipse\Ej_3_7\javadoc.xml"/>
+			</section>
+			<section name="Ej_4_6">
+				<item key="href" value=""/>
+				<item key="destdir" value="C:\Users\alu\Documents\Programacion\eclipse\Ej_4_6\doc"/>
+				<item key="antpath" value="C:\Users\alu\Documents\Programacion\eclipse\Ej_4_6\javadoc.xml"/>
+			</section>
+			<section name="Ej_5_5">
+				<item key="href" value=""/>
+				<item key="destdir" value="C:\Users\alu\Documents\Programacion\eclipse\Ej_5_5\doc"/>
+				<item key="antpath" value="C:\Users\alu\Documents\Programacion\eclipse\Ej_5_5\javadoc.xml"/>
+			</section>
+			<section name="Ej_6_4">
+				<item key="href" value=""/>
+				<item key="destdir" value="C:\Users\alu\Documents\Programacion\eclipse\Ej_6_4\doc"/>
+				<item key="antpath" value="C:\Users\alu\Documents\Programacion\eclipse\Ej_6_4\javadoc.xml"/>
+			</section>
+			<section name="Examen_1_2">
+				<item key="href" value=""/>
+				<item key="destdir" value="C:\Users\alu\Documents\Programacion\eclipse\Examen_1_2\doc"/>
+				<item key="antpath" value="C:\Users\alu\Documents\Programacion\eclipse\Examen_1_2\javadoc.xml"/>
+			</section>
+			<section name="Repaso_1">
+				<item key="href" value=""/>
+				<item key="destdir" value="C:\Users\alu\Documents\Programacion\eclipse\Repaso_1\doc"/>
+				<item key="antpath" value="C:\Users\alu\Documents\Programacion\eclipse\Repaso_1\javadoc.xml"/>
+			</section>
+			<section name="Repaso_9">
+				<item key="href" value=""/>
+				<item key="destdir" value="C:\Users\alu\Documents\Programacion\eclipse\Repaso_9\doc"/>
+				<item key="antpath" value="C:\Users\alu\Documents\Programacion\eclipse\Repaso_9\javadoc.xml"/>
+			</section>
+			<section name="Ej_6_Cuenta">
+				<item key="href" value=""/>
+				<item key="destdir" value="C:\Users\alu\Documents\Programacion\eclipse\Ej_6_Cuenta\doc"/>
+				<item key="antpath" value="C:\Users\alu\Documents\Programacion\eclipse\Ej_6_Cuenta\javadoc.xml"/>
+			</section>
+			<section name="Ej_3_12">
+				<item key="href" value=""/>
+				<item key="destdir" value="C:\Users\alu\Documents\Programacion\eclipse\Ej_3_12\doc"/>
+				<item key="antpath" value="C:\Users\alu\Documents\Programacion\eclipse\Ej_3_12\javadoc.xml"/>
+			</section>
+			<section name="Ej_3_8">
+				<item key="href" value=""/>
+				<item key="destdir" value="C:\Users\alu\Documents\Programacion\eclipse\Ej_3_8\doc"/>
+				<item key="antpath" value="C:\Users\alu\Documents\Programacion\eclipse\Ej_3_8\javadoc.xml"/>
+			</section>
+			<section name="Ej_4_7">
+				<item key="href" value=""/>
+				<item key="destdir" value="C:\Users\alu\Documents\Programacion\eclipse\Ej_4_7\doc"/>
+				<item key="antpath" value="C:\Users\alu\Documents\Programacion\eclipse\Ej_4_7\javadoc.xml"/>
+			</section>
+			<section name="Ej_5_6">
+				<item key="href" value=""/>
+				<item key="destdir" value="C:\Users\alu\Documents\Programacion\eclipse\Ej_5_6\doc"/>
+				<item key="antpath" value="C:\Users\alu\Documents\Programacion\eclipse\Ej_5_6\javadoc.xml"/>
+			</section>
+			<section name="Examen_1_3">
+				<item key="href" value=""/>
+				<item key="destdir" value="C:\Users\alu\Documents\Programacion\eclipse\Examen_1_3\doc"/>
+				<item key="antpath" value="C:\Users\alu\Documents\Programacion\eclipse\Examen_1_3\javadoc.xml"/>
+			</section>
+			<section name="Repaso_8">
+				<item key="href" value=""/>
+				<item key="destdir" value="C:\Users\alu\Documents\Programacion\eclipse\Repaso_8\doc"/>
+				<item key="antpath" value="C:\Users\alu\Documents\Programacion\eclipse\Repaso_8\javadoc.xml"/>
+			</section>
+			<section name="Ej_5_Fecha">
+				<item key="href" value=""/>
+				<item key="destdir" value="C:\Users\alu\Documents\Programacion\eclipse\Ej_5_Fecha\doc"/>
+				<item key="antpath" value="C:\Users\alu\Documents\Programacion\eclipse\Ej_5_Fecha\javadoc.xml"/>
 			</section>
 		</section>
 	</section>

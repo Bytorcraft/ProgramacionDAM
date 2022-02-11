@@ -6,26 +6,24 @@ public class Matriz {
 	private int columnas;
 	
 	public int getFilas() {
-		System.out.println("Introduce el numero de filas que quieres que tenga el vector: ");
-		filas=teclado.nextInt();
 		return filas;}
 	public void setFilas(int filas) {
 		this.filas = filas;}
 	
 	public int getColumnas() {
-		System.out.println("Introduce el numero de columnas que quieres que tenga el vector: ");
-		columnas=teclado.nextInt();
 		return columnas;}
 	public void setColumnas(int columnas) {
 		this.columnas = columnas;}
 	
-	int[][] vector1= new int[filas][columnas];
+	int[][] vector1= new int[this.filas][this.columnas];
 	int[][] vector2= new int[filas][columnas];
 	int[][] resultado= new int[filas][columnas];
 	
-	public void crearVectores() {
-		
-		
+	public void crearVectores() {//crea los 2 vectores necesarios
+		System.out.println("Introduce el numero de filas que quieres que tenga el vector: ");
+		filas=teclado.nextInt();
+		System.out.println("Introduce el numero de columnas que quieres que tenga el vector: ");
+		columnas=teclado.nextInt();
 		 for(int fila=0;fila<vector1.length;fila++){// crea el primer matriz numeros random del 1 al 100
 			 for(int colum=0;colum<vector1[fila].length;colum++) {  
 			 int num=(int) ((Math.random()*100)+1);
@@ -39,7 +37,7 @@ public class Matriz {
 			 }
 		 }
 	}
-	public void valorCelda() {
+	public void valorCelda() {// introduces la fila y columna y te da el numero
 		int bfila, bcolum;
 		System.out.println("Introduce la fila en la que buscar: ");
 		bfila=teclado.nextInt();
@@ -48,7 +46,7 @@ public class Matriz {
 		System.out.println(vector1[bfila][bcolum]);
 		
 	}
-	public void introDato() {
+	public void introDato() {// das fila y columna y cambias el dato
 		int bfila, bcolum, num;
 		System.out.println("Introduce la fila en la que buscar: ");
 		bfila=teclado.nextInt();
@@ -58,7 +56,7 @@ public class Matriz {
 		num=teclado.nextInt();
 		System.out.println(vector1[bfila][bcolum]=num);
 	}
-	public void imprimir() {
+	public void imprimir() {//imprime la matriz
 		for(int fila=0; fila<vector1.length;fila++) {
 			System.out.println(" ");
 			for(int colum=0;colum<vector1[fila].length;colum++) {
@@ -66,7 +64,7 @@ public class Matriz {
 			}
 		}
 	}
-	public void suma() {
+	public void suma() {//suma de 2 matrices, guarda el resultado y lo imprime
 		for (int x=0; x < vector1.length; x++) {
 			  for (int y=0; y < vector1[x].length; y++) {				
 			    resultado[x][y]=vector1[x][y]+vector2[x][y];
@@ -74,7 +72,7 @@ public class Matriz {
 			  }
 			}
 	}
-	public void resta() {
+	public void resta() {//resta de 2 matrices, guarda el resultado y lo imprime
 		for (int x=0; x < vector1.length; x++) {
 			  for (int y=0; y < vector1[x].length; y++) {				
 			    resultado[x][y]=vector1[x][y]-vector2[x][y];
@@ -82,7 +80,7 @@ public class Matriz {
 			  }
 			}
 	}
-	public void mult() {
+	public void mult() {//multiplicacion de 2 matrices, guarda el resultado y lo imprime
 		for (int x=0; x < vector1.length; x++) {
 			  for (int y=0; y < vector1[x].length; y++) {				
 			    resultado[x][y]=vector1[x][y]*vector2[x][y];
