@@ -15,15 +15,17 @@ public class Matriz {
 	public void setColumnas(int columnas) {
 		this.columnas = columnas;}
 	
-	int[][] vector1= new int[this.filas][this.columnas];
-	int[][] vector2= new int[filas][columnas];
-	int[][] resultado= new int[filas][columnas];
+	int[][] vector1= new int[getFilas()][getColumnas()];
+	int[][] vector2= new int[getFilas()][getColumnas()];
+	int[][] resultado= new int[getFilas()][getColumnas()];
 	
 	public void crearVectores() {//crea los 2 vectores necesarios
 		System.out.println("Introduce el numero de filas que quieres que tenga el vector: ");
-		filas=teclado.nextInt();
+		setFilas(teclado.nextInt());
 		System.out.println("Introduce el numero de columnas que quieres que tenga el vector: ");
-		columnas=teclado.nextInt();
+		setColumnas(teclado.nextInt());
+		System.out.println("La longitud del vector es de "+ getFilas()+" filas y "+ getColumnas()+" columnas");
+		
 		 for(int fila=0;fila<vector1.length;fila++){// crea el primer matriz numeros random del 1 al 100
 			 for(int colum=0;colum<vector1[fila].length;colum++) {  
 			 int num=(int) ((Math.random()*100)+1);
@@ -37,6 +39,7 @@ public class Matriz {
 			 }
 		 }
 	}
+	
 	public void valorCelda() {// introduces la fila y columna y te da el numero
 		int bfila, bcolum;
 		System.out.println("Introduce la fila en la que buscar: ");
