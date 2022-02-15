@@ -6,7 +6,12 @@ import java.util.*;
 public class Ejecutable {
 
 	public static void main(String[]Args) {
-	
+		Scanner teclado=new Scanner(System.in);
+		
+		Persona nuePersona=new Persona();
+		
+		
+		
 	}
 
 }
