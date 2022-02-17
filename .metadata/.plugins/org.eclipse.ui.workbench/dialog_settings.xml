@@ -10,20 +10,20 @@
 		<item key="org.eclipse.ui.internal.quickaccess.QuickAccessDialogDIALOG_USE_PERSISTED_SIZE" value="true"/>
 		<item key="org.eclipse.ui.internal.quickaccess.QuickAccessDialogDIALOG_USE_PERSISTED_LOCATION" value="false"/>
 		<list key="orderedElements">
-			<item value="org.eclipse.ui.edit.text.zoomOut"/>
 			<item value="org.eclipse.ui.preferencePages.Views"/>
+			<item value="org.eclipse.ui.edit.text.zoomOut"/>
 		</list>
 		<list key="orderedProviders">
-			<item value="org.eclipse.ui.commands"/>
 			<item value="org.eclipse.ui.preferences"/>
+			<item value="org.eclipse.ui.commands"/>
 		</list>
 		<list key="textEntries">
 			<item value="1"/>
 			<item value="1"/>
 		</list>
 		<list key="textArray">
-			<item value="zoo"/>
 			<item value="dar"/>
+			<item value="zoo"/>
 		</list>
 	</section>
 </section>

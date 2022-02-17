@@ -11,8 +11,12 @@ public class Ejecutable {
 		
 		int opcion;
 		boolean furula=true;
+		int n;
 		
-		Matriz nuevaMatriz=new Matriz();
+		
+		System.out.println("Introduce de cuanto quires que sea tu matriz Ej: 10 si quieres que sea 10x10, 3 si quieres que sea 3x3.");
+		n=teclado.nextInt();
+		Matriz nuevaMatriz=new Matriz(n);
 		
 		
 		nuevaMatriz.crearVectores();
@@ -21,7 +25,8 @@ public class Ejecutable {
 		
 		do {
 			System.out.println("");
-			System.out.println("Indique 1 para ver el valor de una celda, 2 para asignarle un valor a una celda, 3 para imprimir la matriz, 4 para sumar 2 matrices, 5 para restarlas, 6 para multiplicarlas y 7 para salir");
+			System.out.println("Indique 1 para ver el valor de una celda, 2 para asignarle un valor a una celda,");
+			System.out.println("3 para imprimir la matriz, 4 para sumar 2 matrices, 5 para restarlas, 6 para multiplicarlas y 7 para salir"); 
 			opcion=teclado.nextInt();
 				
 			switch(opcion) {

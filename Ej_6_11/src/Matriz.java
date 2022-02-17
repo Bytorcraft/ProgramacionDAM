@@ -15,24 +15,25 @@ public class Matriz {
 	public void setColumnas(int columnas) {
 		this.columnas = columnas;}
 	
-	int[][] vector1= new int[getFilas()][getColumnas()];
-	int[][] vector2= new int[getFilas()][getColumnas()];
-	int[][] resultado= new int[getFilas()][getColumnas()];
+	private int[][] vector1;
+	private int[][] vector2;
+	private int[][] resultado;
 	
+	public Matriz(int cuadrada) {//se nos crean matrices cuadradas(filas=columnas)
+		filas=columnas=cuadrada;
+		vector1= new int[cuadrada][cuadrada];
+		vector2= new int[cuadrada][cuadrada];
+		resultado= new int[cuadrada][cuadrada];
+	}
 	public void crearVectores() {//crea los 2 vectores necesarios
-		System.out.println("Introduce el numero de filas que quieres que tenga el vector: ");
-		setFilas(teclado.nextInt());
-		System.out.println("Introduce el numero de columnas que quieres que tenga el vector: ");
-		setColumnas(teclado.nextInt());
-		System.out.println("La longitud del vector es de "+ getFilas()+" filas y "+ getColumnas()+" columnas");
 		
-		 for(int fila=0;fila<vector1.length;fila++){// crea el primer matriz numeros random del 1 al 100
+		 for(int fila=0;fila<vector1.length;fila++){// crea la primera matriz numeros random del 1 al 100
 			 for(int colum=0;colum<vector1[fila].length;colum++) {  
 			 int num=(int) ((Math.random()*100)+1);
 	            vector1[fila][colum]=num;
 			 	}
 	        }
-		 for(int fila=0;fila<vector2.length;fila++){// crea el segundo matriz numeros random del 1 al 100
+		 for(int fila=0;fila<vector2.length;fila++){// crea la segunda matriz numeros random del 1 al 100
 			 for(int colum=0;colum<vector2[fila].length;colum++) {  
 			 int num=(int) ((Math.random()*100)+1);
 	            vector2[fila][colum]=num;
@@ -69,25 +70,28 @@ public class Matriz {
 	}
 	public void suma() {//suma de 2 matrices, guarda el resultado y lo imprime
 		for (int x=0; x < vector1.length; x++) {
+			System.out.println(" ");
 			  for (int y=0; y < vector1[x].length; y++) {				
 			    resultado[x][y]=vector1[x][y]+vector2[x][y];
-			    System.out.println(resultado[x][y]);
+			    System.out.print(" "+resultado[x][y]+" ");
 			  }
 			}
 	}
 	public void resta() {//resta de 2 matrices, guarda el resultado y lo imprime
 		for (int x=0; x < vector1.length; x++) {
+			System.out.println(" ");
 			  for (int y=0; y < vector1[x].length; y++) {				
 			    resultado[x][y]=vector1[x][y]-vector2[x][y];
-			    System.out.println(resultado[x][y]);
+			    System.out.print(" "+resultado[x][y]+" ");
 			  }
 			}
 	}
 	public void mult() {//multiplicacion de 2 matrices, guarda el resultado y lo imprime
 		for (int x=0; x < vector1.length; x++) {
+			System.out.println(" ");
 			  for (int y=0; y < vector1[x].length; y++) {				
 			    resultado[x][y]=vector1[x][y]*vector2[x][y];
-			    System.out.println(resultado[x][y]);
+			    System.out.print(" "+resultado[x][y]+" ");
 			  }
 			}
 	}
