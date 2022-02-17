@@ -87,13 +87,24 @@ public class Matriz {
 			}
 	}
 	public void mult() {//multiplicacion de 2 matrices, guarda el resultado y lo imprime
-		for (int x=0; x < vector1.length; x++) {
-			System.out.println(" ");
-			  for (int y=0; y < vector1[x].length; y++) {				
-			    resultado[x][y]=vector1[x][y]*vector2[x][y];
-			    System.out.print(" "+resultado[x][y]+" ");
-			  }
-			}
-	}
-	
+		//for (int x=0; x < vector1.length; x++) {   // asi es como lo tenia antes
+		 	//System.out.println(" ");
+			  //for (int y=0; y < vector1[x].length; y++) {				
+			    //resultado[x][y]=vector1[x][y]*vector2[x][y];
+				// System.out.print(" "+resultado[x][y]+" ");
+			    //}
+			//}
+		
+	        for (int i = 0; i < vector1.length; i++) { // aquí se multiplica la matriz codigo sacado de: https://es.stackoverflow.com/questions/65195/c%C3%B3mo-multiplicar-dos-matrices-en-java#
+	        	System.out.println(" ");
+	            for (int j = 0; j < vector2[0].length; j++) {
+	                for (int k = 0; k < vector1[0].length; k++) {
+	                    resultado[i][j] += vector1[i][k] * vector2[k][j];
+	                    System.out.print(" "+resultado[i][j]+" ");
+	            }
+	        }
+	    }
+			
+			  
+	} 
 }
