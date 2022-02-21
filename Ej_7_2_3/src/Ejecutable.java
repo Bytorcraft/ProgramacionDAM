@@ -1,5 +1,5 @@
 /**Programa que organiza una empresa, con empleados, maquinistas y administrativos.
- * Pide unos datos y los organiza por grupos.
+ * Solo se quiere saber la media de edada de cada grupo
  * @author Minaya Herrero
  * @date 21/02/2022
  */
@@ -9,6 +9,8 @@ public class Ejecutable {
 	public static void main (String[]Args) {
 		Scanner teclado=new Scanner(System.in);
 		int numEmpleados, numMaquis, numAdmins;
+		int sumaEmple=0,sumaMaqui=0,sumaAdmin=0;
+		int mediaEmple,mediaMaqui,mediaAdmin;
 		
 		System.out.println("¿Cuantos empleados normales desea introducir?");
 		numEmpleados=teclado.nextInt();
@@ -25,20 +27,24 @@ public class Ejecutable {
 			emple[i]=new Empleado();
 			emple[i].pedirDatos();	
 		}
-		for (int i = 0; i<emple.length; i++){
-			emple[i].verTodosDatos();
+		for (int i = 0; i<emple.length; i++){// haremos que los saque por pantalla las edades y te diga la media
+			sumaEmple+=emple[i].edad;
 		}
+		mediaEmple=sumaEmple/numEmpleados;
+		System.out.println("La media de edad es: "+mediaEmple);
 		
 		System.out.println(" ");
 		
 		for (int i = 0; i<maquis.length; i++) {
 			maquis[i]=new Maquinistas();
 			maquis[i].pedirDatos();
-			
 		}
 		for (int i = 0; i<maquis.length; i++) {
-			maquis[i].verTodosDatos();
+			sumaMaqui+=maquis[i].edad;
+			
 		}
+		mediaMaqui=sumaMaqui/numMaquis;
+		System.out.println("La media de edad es: "+mediaMaqui);
 		
 		System.out.println(" ");
 		
@@ -47,8 +53,11 @@ public class Ejecutable {
 			admins[i].pedirDatos();	
 		}
 		for (int i = 0; i<admins.length; i++) {
-		admins[i].verTodosDatos();	
+			sumaAdmin+=admins[i].edad;
+		
 		}
+		mediaAdmin=sumaAdmin/numAdmins;
+		System.out.println("La media de edad es: "+mediaAdmin);
 	}
 
 }
