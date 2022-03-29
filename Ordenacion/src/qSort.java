@@ -3,6 +3,7 @@ import java.util.*;
 class qSort extends listaOrdenable{
 	
 	public void ordenar () {
+		
 		int k=0;
 	      int ini=0;
 	      int fin= cant-1;	
@@ -18,7 +19,6 @@ class qSort extends listaOrdenable{
 	            k=i;
 	            }
 		}
-
 	}
 	public qSort (int[] x) {
 		super(x);

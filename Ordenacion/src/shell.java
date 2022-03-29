@@ -3,6 +3,7 @@ import java.util.Random;
 class shell extends listaOrdenable{
 	
 	public void ordenar () {
+		
 		int[] h= {9,5,3,1};
 
 		for (int k=0; k<h.length; k++){
@@ -17,9 +18,7 @@ class shell extends listaOrdenable{
 		           l[j+m]=aux;
 		           m++;
 		     }
-		}
-
-		
+		}		
 	}
 	public shell (int[] x) {
 		super(x);

@@ -1,22 +1,23 @@
+import java.util.Random;
 
-public abstract class listaOrdenable extends lista{
-	public abstract void ordenar();
-	public long tiempo() {
-		long t;
-		t= System.currentTimeMillis();
-		t= System.currentTimeMillis()-t;
+public abstract class listaOrdenable extends lista {
+	public void ordenar() {
 		
-		int pruebas=0;
-		long tiempo=0;
+	};
+	public long tiempo() {
+		long iniT;
+		iniT= System.currentTimeMillis();
+		
+		int pruebas=5;
+
 		for( int i=0;i<pruebas;i++) {
-			
-			t= System.currentTimeMillis();
-			m=l.clone();
-			tiempo+= System.currentTimeMillis()-t;
 			pruebas++;
 		}
-		tiempo/= pruebas;
-		return tiempo;
+		long endT= System.currentTimeMillis();
+		endT= endT-iniT;
+		endT/= pruebas;
+		System.out.println(endT);
+		return endT;
 	}
 	int[] m;
 	public listaOrdenable (int[]x) {
