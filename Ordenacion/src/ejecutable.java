@@ -4,7 +4,7 @@ public class ejecutable extends lista {
 
 	public static void main(String[]Args) {
 		
-		final int TAM=100_000;
+		final int TAM=1_000_000;
 		final int MAX=TAM*10;
 		int[] vector=new int[TAM]; 
 		Random r= new Random();

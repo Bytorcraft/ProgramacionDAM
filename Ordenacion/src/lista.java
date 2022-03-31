@@ -1,7 +1,7 @@
 import java.util.Random;
 
 class lista extends comparar{
-		final static int TAM=100_000;
+		final static int TAM=1_000_000;
 		 int MAX=TAM*10;
 		
 		 int[] l= new int[TAM];
