@@ -24,14 +24,11 @@ public class Ejecutable {
 		Votacion v = new Votacion(ESCAÑOS);
 
 		/**
-		 
-		 
 		 for(int i=0;i<p.length;i++) {// con lo que esta comentado, se introducen los datos a mano
 			v.insertarVotos(p[i], votos[i]);
 			v.calcular();
 			System.out.println(v);
 		}
-		 
 		 */
 		
 		

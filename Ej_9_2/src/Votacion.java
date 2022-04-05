@@ -8,7 +8,7 @@ import java.util.Arrays;
  */
 public class Votacion {
 	private final int MAXSIZE=100 ;
-	Partido[] l= new Partido[MAXSIZE];// lista de partidos con sus votos
+	ListaPartido l= new ListaPartido();// lista de partidos con sus votos
 	Partido[] e= null; // escaños
 	int partidos=0; // cantidad de partidos que hay en la lista 
 	int diputados, contDiputados;
@@ -16,49 +16,46 @@ public class Votacion {
 	public Votacion(int diputados) {
 		this.diputados=diputados;}
 	
-	private int insertarVotos(Partido[] l,String partido, int votos, int limite) {
-		for(int i =0; i <limite;i++) {
-			if (l[i].getNombre().equals(partido)) {
-				l[i].addVotos(votos);
-				return limite;
-			}
-		}
-			l[limite]= new Partido(partido, votos);
-			return ++limite;
-		}
-	
 	public void insertarVotos(String partido, int votos) {// llama al otro metodo para que lo solucione
 		e=null;
-		partidos =insertarVotos(l, partido, votos, partidos);
+		l.añadirVotos(partido,votos);
 		}
 	
 	public void calcular() { // determina el numero de diputados de cada partido con los datos actuales
 		int votosTotal=0;
-		Partido[] aux= new Partido[diputados*partidos]; 
+		ListaPartido aux= new ListaPartido(diputados*partidos); 
 		
 		for (int i=0; i<partidos; i++) {
-			votosTotal+=l[i].getVotos();
+			votosTotal+=l.getVotos(i);
 		}
+		/**
+		 for (int i=0; i< diputados*partidos;i++){
+		 int auxPartidos =i % partidos;
+		 int division = i/ partidos+ 1;
+		 
+		 aux.insertarVotos(l.getNombre(auxPartido,l.getVotos(auxPartido)<porcentaje ? 0 : l.getVotos(auxPartido)/divisor))
+		 
+		 }
+		 */
 		int porcentaje=(int) ((votosTotal/100.0)*5); // se divide primero para que no haya excepcion
 		for (int i=0; i<partidos; i++) {
-			if(l[i].getVotos()>=porcentaje) {
-				aux[i]=l[i]; // cociente de votos
+			if(l.getVotos(i)>=porcentaje) {
+				aux.insertarVotos(l.getNombre(i),votosTotal); // cociente de votos
 			}else
-			aux[i]= new Partido(l[i].getNombre(),0);
-			
+			aux.insertarVotos(l.getNombre(i), votosTotal);
 		}
-		for (int i=partidos; i<diputados*partidos; i++) {
-			
+		
+		for (int i=partidos; i<diputados*partidos; i++) {	
 			int auxPartido= i% partidos;
 			int divisor= i/ partidos +1;
 			// creas un vector auxiliar para guardar los partidos, para calcular el numero de votos
-			aux[i]= new Partido(aux[auxPartido].getNombre(),aux[auxPartido].getVotos()/divisor);
+			aux.insertarVotos(aux.getNombre(auxPartido), aux.getVotos(auxPartido)/divisor);
 		}
-		Arrays.sort(aux);
-		e= new Partido[MAXSIZE];
+		aux.ordenar();
+		e= new ListaPartido(l.getCantidad());
 		contDiputados=0;
 		for (int i=0; i < diputados;i++) {
-			contDiputados=insertarVotos(e, aux[i].getNombre(),1, contDiputados);
+			e.añadirVotos(aux.getNombre(i), 1);
 		}
 	}
 	public String toString () { // nos imprime una cadena con el nombre y los votos
