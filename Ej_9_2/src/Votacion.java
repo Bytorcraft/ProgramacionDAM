@@ -11,20 +11,25 @@ public class Votacion {
 	Partido[] l= new Partido[MAXSIZE];// lista de partidos con sus votos
 	Partido[] e= null; // escaños
 	int partidos=0; // cantidad de partidos que hay en la lista 
-	int diputados;
+	int diputados, contDiputados;
 	
 	public Votacion(int diputados) {
 		this.diputados=diputados;}
 	
-	public void insertarVotos(String partido, int votos) {
-		e=null;
-		for(int i =0; i <partidos;i++) {
+	private int insertarVotos(Partido[] l,String partido, int votos, int limite) {
+		for(int i =0; i <limite;i++) {
 			if (l[i].getNombre().equals(partido)) {
 				l[i].addVotos(votos);
-				return;
+				return limite;
 			}
-			l[partidos++]= new Partido(partido, votos);
-		}	
+		}
+			l[limite]= new Partido(partido, votos);
+			return ++limite;
+		}
+	
+	public void insertarVotos(String partido, int votos) {// llama al otro metodo para que lo solucione
+		e=null;
+		partidos =insertarVotos(l, partido, votos, partidos);
 		}
 	
 	public void calcular() { // determina el numero de diputados de cada partido con los datos actuales
@@ -50,16 +55,17 @@ public class Votacion {
 			aux[i]= new Partido(aux[auxPartido].getNombre(),aux[auxPartido].getVotos()/divisor);
 		}
 		Arrays.sort(aux);
-		e= new Partido[diputados];
+		e= new Partido[MAXSIZE];
+		contDiputados=0;
 		for (int i=0; i < diputados;i++) {
-			e[i]= aux[i];
+			contDiputados=insertarVotos(e, aux[i].getNombre(),1, contDiputados);
 		}
 	}
 	public String toString () { // nos imprime una cadena con el nombre y los votos
 		if (e== null)
 			return "No ha sido calculado";
 		String salida="Partido\tVotos";
-		for (int i=0; i<partidos; i++) {
+		for (int i=0; i<contDiputados; i++) {
 			salida+="\n"+ e[i].getNombre() + "\t "+ e[i].getVotos();	
 		}
 		return salida;
