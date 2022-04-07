@@ -1,10 +1,8 @@
 
 public class Partido implements Comparable {
 
-	final private String nombre; // nombre del partido
-	private int votos;
-	
-	
+	final protected String nombre; // nombre del partido
+	protected int votos; // con protected no lo ven otras clases que no sean de su herencia
 	
 	
 	public String getNombre() {
@@ -32,5 +30,7 @@ public class Partido implements Comparable {
 		return -(votos- ((Partido)o).votos);// se pone el - para  que lo saque de mayor a menor, sin el -, sacaria el menor
 	}
 	
-	
+	public String toString() {
+		return nombre + "\t " + votos;
+	}
 }
