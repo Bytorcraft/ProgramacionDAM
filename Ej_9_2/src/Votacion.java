@@ -40,7 +40,7 @@ public class Votacion {
 		 int divisor= i/ partidos +1;
 		 Partido p= l.getPartido(auxPartidos);
 		 
-		 aux.insertar(new p.getNombre(),p.getVotos() <porcentaje ? 0 : p.getVotos()/divisor);
+		 aux.insertar(new Diputado( p.getNombre(),p.getVotos() <porcentaje ? 0 : p.getVotos()/divisor));
 		 }
 		
 		aux.ordenar();
@@ -60,7 +60,7 @@ public class Votacion {
 	public String toString () { // nos imprime una cadena con el nombre y los votos
 		if (e== null)
 			return "No ha sido calculado";
-		String salida="Partido:\tEscaños:";
+		String salida="Partido:\tEscaños:\tVotos:";
 		for (int i=0; i<e.getCantidad(); i++) {
 			Partido p = e.getPartido(i);
 			salida+="\n"+ p;	

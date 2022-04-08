@@ -1,5 +1,5 @@
 
-public class Diputado extends Partido {
+public class Diputado extends Partido implements Comparable {
 	private int diputados;
 	
 	

@@ -14,7 +14,7 @@ public class ListaPartido {
 	public ListaPartido(int size) {
 		l= new Partido[size];// lista de partidos con sus votos
 	}
-	/**
+/**	
 	public void añadirVotos(String partido, int votos ) {
 		for(int i =0; i <limite;i++) {
 			if (l[i].getNombre().equals(partido)) {
