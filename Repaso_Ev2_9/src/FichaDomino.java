@@ -31,7 +31,7 @@ public class FichaDomino {
 		String v0 = ficha[0]==0?" ": (" "+ficha[0]); // Si alguno es 0, te devuelve blanco
 		String v1 = ficha[1]==0?" ": (" "+ficha[1]);
 		
-		 return "["+ ficha[0]+ " |"+v1+ "]";
+		 return "["+ v0+ "|"+v1+ "]";
 	 }
 
 }

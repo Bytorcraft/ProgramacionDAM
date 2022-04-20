@@ -7,13 +7,25 @@ public class Ejecutable {
 
 	public static void main(String[]Args) {
 		/**
-		 FichaDomino fichaA= new FichaDomino(2,3);
+		FichaDomino fichaA= new FichaDomino(2,3);
 		FichaDomino fichaB= new FichaDomino(2);
 		FichaDomino fichaC= new FichaDomino(3,6);
 		System.out.println(fichaB);
 		 */
 		
+		
+		/**
+		Ficha ficha= new Ficha(0,6);
+		System.out.println(ficha);
+		 
+		 
+		 */
+		
+		
 		Domino d = new Domino();
+		
+		
+		
 	}
 
 }
