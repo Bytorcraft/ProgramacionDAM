@@ -8,7 +8,7 @@ public class Domino {
 		// FichaDomino[] domino = new FichaDomino[28];
 		Ficha[] domino=new Ficha[28];
 		boolean[] enCaja= new boolean[28]; //verdadero si la ficha esta en la caja del dominó, falso si se esta jugando con ella
-		int cantidad=28; // cantidad de fichas que disponemos
+		int cantidad; // cantidad de fichas que disponemos
 		
 		/**
 		public Domino(){
@@ -38,8 +38,8 @@ public class Domino {
 				for (int j=i; j<7; j++) {
 					domino[cantidad]= new Ficha(i,j);
 					enCaja[cantidad]=true;
-						System.out.println(cantidad+": "+domino[cantidad]);
-						cantidad++;					
+					System.out.println(cantidad+": "+domino[cantidad]);
+					cantidad++;					
 				}
 			}
 		}		
