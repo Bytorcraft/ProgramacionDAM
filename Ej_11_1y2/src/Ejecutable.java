@@ -12,7 +12,7 @@ public class Ejecutable {
 		FileWriter fichero = null;
 		try {
 
-			fichero = new FileWriter("C:\\Users\\alu\\Documents\\Programacion\\eclipse\\Ej_11_1\\src\\primos.txt");
+			fichero = new FileWriter("C:\\Users\\alu\\Documents\\Programacion\\eclipse\\Ej_11_1y2\\src\\primos.txt");
 
 			for (String linea : lineas) { // Escribe linea a linea en el fichero
 				fichero.write(linea + "\n");
@@ -25,7 +25,7 @@ public class Ejecutable {
 		}
 		
 		// Fichero del que queremos leer
-				File documento = new File("C:\\Users\\alu\\Documents\\Programacion\\eclipse\\Ej_11_1\\src\\primos.txt");
+				File documento = new File("C:\\Users\\alu\\Documents\\Programacion\\eclipse\\Ej_11_1y2\\src\\primos.txt");
 				Scanner s = null;
 
 				try {
