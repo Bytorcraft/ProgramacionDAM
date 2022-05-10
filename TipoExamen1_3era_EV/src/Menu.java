@@ -1,6 +1,6 @@
-import java.io.FileNotFoundException;
-import java.util.*;
 
+import java.util.*;
+import java.io.*;
 /** Menu principal del programa
  * 
  * @author Minaya Herrero Latorre
@@ -11,7 +11,7 @@ public class Menu {
 	Scanner teclado = new Scanner(System.in);
 	
 	String fichero; //nombre del archivo de trabajo
-	
+	File fich = new File("C:\\Users\\alu\\Documents\\Programacion\\eclipse\\TipoExamen1_3era_EV\\passwd.txt");
 	
 	public Menu(String archivo) {
 	fichero=archivo;	
@@ -51,13 +51,13 @@ public class Menu {
 		switch(opcion) {
 		case 1: 
 			insertar();
-			
+
 			break;
 		case 2:
 			System.out.println("Borrar");
 			break;
 		case 3:
-			System.out.println("Modificar");
+			modificar();
 			break;
 		case 4:
 			System.out.println("Validar");
@@ -97,6 +97,21 @@ public class Menu {
 			}
 			
 		}
+		
+	}
+	
+	void modificar() {
+		
+		Modificar m= new Modificar();
+		
+		System.out.println("Indica la clave a cambiar: ");
+		String aClave= teclado.next();
+		System.out.println("Indica la nueva clave: ");
+		String nClave= teclado.next();
+		
+		m.modificar(fich, aClave, nClave);
+		
+		
 		
 	}
 	

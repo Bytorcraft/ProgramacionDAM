@@ -7,7 +7,7 @@ import java.util.*;
  *
  */
 public class Insertar {
-		Scanner s=null;
+		Scanner s;
 		String fichero;
 		boolean add=true; //para añadir
 		
@@ -28,9 +28,9 @@ public class Insertar {
 		
 	public boolean comprobarUsuario(String nombre) {
 		if (s== null) return false;
-		boolean encontrado=false;;
+		boolean encontrado=false;
 		
-		while(! encontrado && s.hasNextLine()) {
+		while(! encontrado && s.hasNext()) {
 			String usuario= s.next();
 			if(nombre.equals(usuario)) 
 			return true;
