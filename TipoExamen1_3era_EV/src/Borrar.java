@@ -1,12 +1,12 @@
 import java.io.*;
 import java.util.*;
-
-/** Modifica la contraseña de un usuario..
+/**Borra el usuario si esta.
  * 
  * @author Minaya Herrero Latorre
- *
+ * @date 11/05/2022
  */
-public class Modificar {
+public class Borrar {
+
 
     /*************************************************************
      * El metodo "Escribir" cuenta con dos parametros "fFichero"
@@ -77,7 +77,7 @@ public class Modificar {
      * 
      * nombre: es el nombre del usuario.
     * ******************************************************************/
-    void modificar(File fAntiguo,String aCadena,String nCadena, String nombre)
+    void borrar(File fAntiguo,String aCadena, String nombre)
     {
        /*
             Las dos lienas de codigo siguientes, basicamente lo que hacen es generar un numero aleatorio y
@@ -112,8 +112,7 @@ public class Modificar {
                 	String todo= nombre +" "+aCadena;
                     if(linea.equals(todo))
                     {
-                    
-                        Escribir(fNuevo,nombre+" "+nCadena+"\n");
+                        Escribir(fNuevo,"");
                     }
                     else
                     {

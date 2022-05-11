@@ -11,7 +11,7 @@ public class Menu {
 	Scanner teclado = new Scanner(System.in);
 	
 	String fichero; //nombre del archivo de trabajo
-	File fich = new File("C:\\Users\\alu\\Documents\\Programacion\\eclipse\\TipoExamen1_3era_EV\\passwd.txt");
+	File fich = new File("passwd.txt");
 	
 	public Menu(String archivo) {
 	fichero=archivo;	
@@ -51,16 +51,15 @@ public class Menu {
 		switch(opcion) {
 		case 1: 
 			insertar();
-
 			break;
 		case 2:
-			System.out.println("Borrar");
+			borrar();
 			break;
 		case 3:
 			modificar();
 			break;
 		case 4:
-			System.out.println("Validar");
+			validar();
 			break;		
 		}
 		return false;		
@@ -95,24 +94,46 @@ public class Menu {
 				teclado.next();
 				return;
 			}
-			
 		}
+	}
+	void borrar() {
+		Borrar b = new Borrar();
 		
+		System.out.println("Indica el nombre del usuario: ");
+		String nombre= teclado.next();
+		
+		System.out.println("Indica la clave para poder proceder a borrar: ");
+		String aClave= teclado.next();
+		
+		b.borrar(fich, aClave, nombre);
 	}
 	
 	void modificar() {
 		
 		Modificar m= new Modificar();
 		
+		System.out.println("Indica el nombre del usuario: ");
+		String nombre= teclado.next();
+		System.out.println("El usuario existe, se procede a cambiar la contraseña");
+		
 		System.out.println("Indica la clave a cambiar: ");
 		String aClave= teclado.next();
 		System.out.println("Indica la nueva clave: ");
 		String nClave= teclado.next();
 		
-		m.modificar(fich, aClave, nClave);
+		m.modificar(fich, aClave, nClave, nombre);	
+	}
+	
+	void validar() {
+		Validar v= new Validar();
 		
+		System.out.println("Indica el nombre del usuario: ");
+		String nombre= teclado.next();
 		
+		System.out.println("Indica la clave para poder validar los datos: ");
+		String aClave= teclado.next();
 		
+		v.validar(fich, aClave, nombre);
 	}
 	
 }
